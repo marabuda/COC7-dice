@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="subject" content="trpg克蘇魯的呼喚7版線上擲骰">
+	<meta name="description" content="克蘇魯的呼喚7版技能檢定擲骰">
+	<!-- fb -->
+	<meta property="og:title" content="trpg克蘇魯的呼喚7版線上擲骰">
+	<meta property="og:image" content="https://diceonlinemomo.neocities.org/img/site.png">
+	<meta property="og:description" content="技能檢定擲骰">
+	<meta property="og:site_name" content="摸摸骰網">
+
+	<!-- Schema -->
+	<html itemscope itemtype="http://schema.org/Thing">
+	<meta itemprop="name" content="trpg克蘇魯的呼喚7版線上擲骰">
+	<meta itemprop="description" content="克蘇魯的呼喚7版技能檢定擲骰，有獎懲骰功能">
+	<meta itemprop="image" content="https://diceonlinemomo.neocities.org/img/site.png">
+	<title>摸摸骰網</title>
+	<link rel="shortcut icon" href="/fav.ico"/>
+	<link rel="bookmark" href="/fav.ico"/>
+	<link rel=stylesheet type="text/css" href="../css/style.css">
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="header_top">
+			<div id="logo"><a href=""></a></div>			
+		</div>
+		<div id="header_bot">
+			<ul>
+				<li><a href="" class="tran1 activate">技能檢定</a></li>
+				<li><a href="" class="tran1">教育成長</a></li>
+				<li><a href="" class="tran1">人物創建</a></li>
+				<li><a href="" class="tran1">自訂擲骰</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div id="content">
+	<form>
+		<div class="left">
+			<div class="form">
+				<span>玩家名稱</span> <br>
+				<input type="text" class="scale1 tran1" id="pl"placeholder="PL"> <br>				
+			</div>
+			<div class="form">
+				<span>角色名稱</span> <br>
+				<input type="text"  class="scale1 tran1" id="pc" placeholder="PC">
+			</div>
+		</div>
+		<div class="mid">
+			<div class="form">
+				<span>投擲</span><br>
+				<b class="form_text">1d100</b>
+			</div> 
+			<div class="form">
+				<span>獎懲骰</span> <br>
+				<label for="bonus" class="scale3">
+					<input type="radio" name="group2" id="bonus"><b class="form_text2">獎勵</b>
+				</label>	
+				<label for="peanlty" class="scale3">
+					<input type="radio" name="group2" id="peanlty"><b class="form_text2">懲罰</b>
+				</label>	
+				<input type="number" min="0" max="20" class="scale2 tran1" id="diceTimes" placeholder="顆">
+			</div>
+			<div class="form">
+				<span>目標值</span> <br>
+				<input type="text" class="scale2" placeholder="技能名稱" id="skill"><b class="form_text3 tran1">，</b>
+				<input type="number" min="0" max="500" class="scale2 tran1" id="targetNumber" placeholder="數值">
+			</div>
+			<div class="form">
+				<input type="reset" value="清除"  class="tran1 btn scale2">	
+				<b class="form_text3"></b>
+				<input type="button" value="擲骰" onclick="printOutput()" class="tran1 btn btn_strong scale2">
+			</div>
+		</div>
+	</form> 
+	<div class="right"><p id="result"></p></div>	
+	</div>
+	
+<script type="text/javascript" src="../js/script.js"></script>	
+</body>
+</html>
