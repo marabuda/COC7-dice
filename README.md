@@ -1,5 +1,6 @@
 # COC7-dice
 以js完成擲骰並印出結果
+<https://marabuda.github.io/COC7-dice/>
 
 ### 百面骰  
 以投擲兩顆十面骰的方式進行  
